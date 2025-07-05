@@ -11,9 +11,12 @@ license = "MIT OR Apache-2.0"
 categories = ["gui"]
 
 [dependencies]
-imgui = { version = "0.12.0", git = "https://github.com/imgui-rs/imgui-rs" }
-sdl2 = "0.37"
+imgui = { git = "https://github.com/imgui-rs/imgui-rs" }
+sdl2 = { git = "https://github.com/Rust-SDL2/rust-sdl2.git" }
 
 [dev-dependencies]
 imgui-glow-renderer = { version = "0.13.0", git = "https://github.com/imgui-rs/imgui-glow-renderer" }
-sdl2 = { version = "0.37", features = ["bundled", "static-link"] }
+sdl2 = { git = "https://github.com/Rust-SDL2/rust-sdl2.git", features = [
+  "bundled",
+  "static-link",
+] }
