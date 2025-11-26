@@ -12,11 +12,16 @@ categories = ["gui"]
 
 [dependencies]
 imgui = { git = "https://github.com/imgui-rs/imgui-rs" }
-sdl2 = { git = "https://github.com/Rust-SDL2/rust-sdl2.git" }
+sdl2 = { git = "https://github.com/Rust-SDL2/rust-sdl2.git", rev = "e4fbf931856bcbee5b0df7eab44f3f4d273f2e8d", features = [
+  "static-link",
+  "bundled",
+  "use-bindgen",
+] }
 
 [dev-dependencies]
 imgui-glow-renderer = { version = "0.13.0", git = "https://github.com/imgui-rs/imgui-glow-renderer" }
-sdl2 = { git = "https://github.com/Rust-SDL2/rust-sdl2.git", features = [
-  "bundled",
+sdl2 = { git = "https://github.com/Rust-SDL2/rust-sdl2.git", rev = "e4fbf931856bcbee5b0df7eab44f3f4d273f2e8d", features = [
   "static-link",
+  "bundled",
+  "use-bindgen",
 ] }
